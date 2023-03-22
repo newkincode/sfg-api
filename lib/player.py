@@ -4,7 +4,7 @@ from typing import Dict, Union
 import pygame
 import random
 
-from lib.object import Object
+from lib.Object import Object
 from lib.plants import plants_list
 from lib.farm import tile_map, Tiles
 from lib.items import Items
