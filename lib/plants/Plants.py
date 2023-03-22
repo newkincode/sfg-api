@@ -1,6 +1,6 @@
 import pygame
 
-from ..object import Object
+from ..Object import Object
 
 
 class Plants(Object):
@@ -14,6 +14,7 @@ class Plants(Object):
         self.age: int
         self.watered: bool
         self.rotCount: int
+        self.growCount: int
 
     def grow(self) -> None: ...
     def rot(self) -> None: ...

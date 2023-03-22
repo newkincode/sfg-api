@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import lib.plants.plants_list as plantsList
 
 data = os.listdir("mods")
 data = [re.sub('.py', '', i) for i in data]
@@ -24,4 +25,4 @@ for file_path in file_paths:
     # import한 모듈 사용 예시
     modClassList.append(module.mod())
 for i in modClassList:
-    i.test()
+    plantsList.plants_list.append(i)

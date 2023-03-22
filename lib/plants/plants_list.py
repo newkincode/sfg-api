@@ -11,7 +11,7 @@ plants_type = Union[
     sunFlower.SunFlower,
     carrots.Carrots
 ]
-plants_list = cast(tuple[plants_type], get_args(plants_type))
+plants_list = cast(list[plants_type], get_args(plants_type))
 
 def next_plant(plant: plants_type) -> plants_type:
     now_index: int
