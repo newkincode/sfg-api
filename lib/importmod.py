@@ -4,6 +4,7 @@ import re
 import lib.plants.plants_list as plantsList
 import importlib
 import glob
+import lib.runtime_values as runtime_values
 
 
 data = os.listdir("mods")
@@ -15,6 +16,6 @@ for data in data:
     # importlib를 사용하여 모듈 import
     module = importlib.import_module("." + data, package="mods")
     # import한 모듈 사용 예시
-    modClassList.append(module.mod())
+    modClassList.append(module.mod(runtime_values.players[0].pos, runtime_values.screen))
 for i in modClassList:
     plantsList.plants_list.append(i)
