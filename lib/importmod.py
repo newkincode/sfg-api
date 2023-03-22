@@ -16,6 +16,6 @@ for data in data:
     # importlib를 사용하여 모듈 import
     module = importlib.import_module("." + data, package="mods")
     # import한 모듈 사용 예시
-    modClassList.append(module.mod(runtime_values.players[0].pos, runtime_values.screen))
+    modClassList.append(module.mod())
 for i in modClassList:
     plantsList.plants_list.append(i)
