@@ -6,7 +6,6 @@ if __name__ == "__main__":
     pygame.init()
     # runtime values
     from lib import runtime_values
-    from lib import importmod
     from lib import player
 
     runtime_values.players = [player.Player(pygame.image.load(
@@ -34,6 +33,7 @@ if __name__ == "__main__":
     from lib import logger
     from lib import imgs
     from lib.plants import plants_list
+    from lib import importmod
 
     print(f'''
                          _    ___       ___
